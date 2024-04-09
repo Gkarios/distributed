@@ -1,0 +1,55 @@
+version 3
+run General-0-20240322-18:51:00-4605
+attr configname General
+attr datetime 20240322-18:51:00
+attr datetimef 20240322-185100
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 4605
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config network Network
+
+par Network.node1.gate2.channel typename "\"ned.DelayChannel\""
+par Network.node1.gate2.channel disabled false
+attr mutable ""
+par Network.node1.gate2.channel delay 0.1s
+attr mutable ""
+attr unit s
+par Network.node2.gate2.channel typename "\"ned.DelayChannel\""
+par Network.node2.gate2.channel disabled false
+attr mutable ""
+par Network.node2.gate2.channel delay 0.1s
+attr mutable ""
+attr unit s
+par Network.node3.gate2.channel typename "\"ned.DelayChannel\""
+par Network.node3.gate2.channel disabled false
+attr mutable ""
+par Network.node3.gate2.channel delay 0.1s
+attr mutable ""
+attr unit s
+par Network.node4.gate2.channel typename "\"ned.DelayChannel\""
+par Network.node4.gate2.channel disabled false
+attr mutable ""
+par Network.node4.gate2.channel delay 0.1s
+attr mutable ""
+attr unit s
+par Network.node1 typename "\"Node\""
+par Network.node1 nodeID 1001
+par Network.node2 typename "\"Node\""
+par Network.node2 nodeID 1002
+par Network.node3 typename "\"Node\""
+par Network.node3 nodeID 1003
+par Network.node4 typename "\"Node\""
+par Network.node4 nodeID 1004
+par Network typename "\"Network\""
+

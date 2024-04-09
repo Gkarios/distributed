@@ -1,0 +1,7 @@
+[General]
+
+[Config simpleTestWith2Nodes]
+network = Network
+
+[Config simpleTest2]
+network = Network2

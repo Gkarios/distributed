@@ -1,0 +1,15 @@
+[General]
+#num-rngs = 1
+#seed-set = 0
+
+*.node[*].nodeId = 1000 + index
+
+[Config ChainTopology]
+network = Chain
+*.totalNodes = 9
+*.node[*].nodeId = 500 + index
+
+
+[Config RandomGraph]
+network = RandomGraph
+*.totalNodes = 10

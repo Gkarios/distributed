@@ -1,0 +1,54 @@
+version 3
+run General-0-20240329-20:36:03-9182
+attr configname General
+attr datetime 20240329-20:36:03
+attr datetimef 20240329-203603
+attr experiment General
+attr inifile network2.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network2
+attr processid 9182
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config network Network2
+
+par Network2.node[0] typename "\"Node2\""
+par Network2.node[0] totalNodes -1
+par Network2.node[0] nodeID 1000
+par Network2.node[1] typename "\"Node2\""
+par Network2.node[1] totalNodes -1
+par Network2.node[1] nodeID 1001
+par Network2.node[2] typename "\"Node2\""
+par Network2.node[2] totalNodes -1
+par Network2.node[2] nodeID 1002
+par Network2.node[3] typename "\"Node2\""
+par Network2.node[3] totalNodes -1
+par Network2.node[3] nodeID 1003
+par Network2.node[4] typename "\"Node2\""
+par Network2.node[4] totalNodes -1
+par Network2.node[4] nodeID 1004
+par Network2.node[5] typename "\"Node2\""
+par Network2.node[5] totalNodes -1
+par Network2.node[5] nodeID 1005
+par Network2.node[6] typename "\"Node2\""
+par Network2.node[6] totalNodes -1
+par Network2.node[6] nodeID 1006
+par Network2.node[7] typename "\"Node2\""
+par Network2.node[7] totalNodes -1
+par Network2.node[7] nodeID 1007
+par Network2.node[8] typename "\"Node2\""
+par Network2.node[8] totalNodes -1
+par Network2.node[8] nodeID 1008
+par Network2.node[9] typename "\"Node2\""
+par Network2.node[9] totalNodes -1
+par Network2.node[9] nodeID 1009
+par Network2 typename "\"Network2\""
+par Network2 totalNodes 10
+

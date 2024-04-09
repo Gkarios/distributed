@@ -1,0 +1,458 @@
+13:40:57 **** Build of configuration release for project distrlab01 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab01
+08:25:01 **** Build of configuration release for project distrlab01 ****
+make MODE=release all 
+Creating executable: out/clang-release//distrlab01
+08:27:10 **** Incremental Build of configuration release for project distrlab01 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:47:23 **** Incremental Build of configuration release for project distrlab01 ****
+make MODE=release all 
+Node.cc
+Node.cc:23:5: error: use of undeclared identifier 'myID'
+   23 |     myID = par("nodeID");
+      |     ^
+Node.cc:24:41: error: use of undeclared identifier 'myID'
+   24 |     EV << "Hello I'm node with id: " << myID << endl;
+      |                                         ^
+Node.cc:25:48: error: use of undeclared identifier 'myID'
+   25 |     std::cout << "Hello I'm node with id: " << myID << endl;
+      |                                                ^
+Node.cc:34:16: error: use of undeclared identifier 'simTIme'; did you mean 'simTime'?
+   34 |     scheduleAt(simTIme() + 10, msg);
+      |                ^~~~~~~
+      |                simTime
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/csimulation.h:596:18: note: 'simTime' declared here
+  596 | inline simtime_t simTime() {return cSimulation::getActiveSimulation()->getSimTime();}
+      |                  ^
+4 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+08:49:05 **** Incremental Build of configuration release for project distrlab01 ****
+make MODE=release all 
+Node.cc
+Node.cc:24:41: error: use of undeclared identifier 'myID'
+   24 |     EV << "Hello I'm node with id: " << myID << endl;
+      |                                         ^
+Node.cc:25:48: error: use of undeclared identifier 'myID'
+   25 |     std::cout << "Hello I'm node with id: " << myID << endl;
+      |                                                ^
+Node.cc:34:31: error: expected ';' after expression
+   34 |     scheduleAt(simTime(), msg)
+      |                               ^
+      |                               ;
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+08:49:36 **** Incremental Build of configuration debug for project distrlab01 ****
+make MODE=debug all 
+Node.cc
+Node.cc:34:31: error: expected ';' after expression
+   34 |     scheduleAt(simTime(), msg)
+      |                               ^
+      |                               ;
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+08:50:04 **** Incremental Build of configuration debug for project distrlab01 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab01_dbg
+08:54:20 **** Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Node.cc:54:16: warning: variable 'mymsg' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   54 |     } else if (coin == 1)
+      |                ^~~~~~~~~
+Node.cc:58:10: note: uninitialized use occurs here
+   58 |     send(mymsg, "gate2");
+      |          ^~~~~
+Node.cc:54:12: note: remove the 'if' if its condition is always true
+   54 |     } else if (coin == 1)
+      |            ^~~~~~~~~~~~~~
+   55 |         {mymsg = new cMessage("hello-1");
+Node.cc:50:21: note: initialize the variable 'mymsg' to silence this warning
+   50 |     cMessage * mymsg;
+      |                     ^
+      |                      = nullptr
+1 warning generated.
+Creating executable: out/clang-debug//distrlab02_dbg
+08:56:59 **** Incremental Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Node.cc:54:16: warning: variable 'mymsg' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   54 |     } else if (coin == 1){
+      |                ^~~~~~~~~
+Node.cc:58:10: note: uninitialized use occurs here
+   58 |     send(mymsg, "gate2");
+      |          ^~~~~
+Node.cc:54:12: note: remove the 'if' if its condition is always true
+   54 |     } else if (coin == 1){
+      |            ^~~~~~~~~~~~~~
+Node.cc:50:21: note: initialize the variable 'mymsg' to silence this warning
+   50 |     cMessage * mymsg;
+      |                     ^
+      |                      = nullptr
+1 warning generated.
+Creating executable: out/clang-debug//distrlab02_dbg
+09:05:38 **** Incremental Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Node.cc:54:16: warning: variable 'mymsg' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   54 |     } else if (coin == 1){
+      |                ^~~~~~~~~
+Node.cc:58:10: note: uninitialized use occurs here
+   58 |     send(mymsg, "gate2");
+      |          ^~~~~
+Node.cc:54:12: note: remove the 'if' if its condition is always true
+   54 |     } else if (coin == 1){
+      |            ^~~~~~~~~~~~~~
+Node.cc:50:21: note: initialize the variable 'mymsg' to silence this warning
+   50 |     cMessage * mymsg;
+      |                     ^
+      |                      = nullptr
+1 warning generated.
+Creating executable: out/clang-debug//distrlab02_dbg
+09:06:56 **** Incremental Build of configuration release for project distrlab02 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab02
+13:57:38 **** Incremental Build of configuration release for project distrlab02 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab02
+18:42:21 **** Incremental Build of configuration release for project distrlab01 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab01
+18:43:07 **** Incremental Build of configuration debug for project distrlab01 ****
+make MODE=debug all 
+Creating executable: out/clang-debug//distrlab01_dbg
+18:45:02 **** Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+testmodule.cc
+Creating executable: out/clang-debug//distrlab02_dbg
+18:49:25 **** Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab02_dbg
+18:49:58 **** Incremental Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:50:56 **** Incremental Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab02_dbg
+19:36:30 **** Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+19:38:26 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab03
+19:39:33 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:40:06 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:51:40 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+19:52:54 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab03
+19:53:31 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:02:45 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:03:29 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:04:10 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:04:35 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+Node2.cc
+Creating executable: out/clang-release//distrlab03
+20:10:57 **** Incremental Build of configuration release for project distrlab03 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:21:10 **** Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+19:34:31 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:34:57 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:35:34 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:01:14 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:02:09 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:05:34 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:29:39: error: use of undeclared identifier 'msg'; did you mean 'cmsg'?
+   29 |         scheduleAt(simTime() + 0.001, msg);
+      |                                       ^~~
+      |                                       cmsg
+Node2.cc:28:19: note: 'cmsg' declared here
+   28 |         cMessage *cmsg = new cMessage("start", START);
+      |                   ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node2.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:05:48 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:08:01 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:11:35 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:45:9: warning: unused variable 'nextId' [-Wunused-variable]
+   45 |     int nextId;
+      |         ^~~~~~
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:18:13 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:51:23: error: use of undeclared identifier 'getSize'; did you mean 'gateSize'?
+   51 |     for (int i = 0; i<getSize("inoutGateVector");i++){
+      |                       ^~~~~~~
+      |                       gateSize
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmodule.h:862:17: note: 'gateSize' declared here
+  862 |     virtual int gateSize(const char *gatename) const;
+      |                 ^
+Node2.cc:52:2: error: expected '}'
+   52 | }
+      |  ^
+Node2.cc:44:29: note: to match this '{'
+   44 | void Node2::forwardMessage(){
+      |                             ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node2.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:21:50 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:51:23: error: use of undeclared identifier 'getSize'; did you mean 'gateSize'?
+   51 |     for (int i = 0; i<getSize("inoutGateVector");i++){
+      |                       ^~~~~~~
+      |                       gateSize
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmodule.h:862:17: note: 'gateSize' declared here
+  862 |     virtual int gateSize(const char *gatename) const;
+      |                 ^
+Node2.cc:55:13: warning: unused variable 'otherId' [-Wunused-variable]
+   55 |         int otherId = otherNode->myId;
+      |             ^~~~~~~
+Node2.cc:56:6: error: expected '}'
+   56 |     }
+      |      ^
+Node2.cc:44:29: note: to match this '{'
+   44 | void Node2::forwardMessage(){
+      |                             ^
+1 warning and 2 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node2.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:24:20 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:63:6: error: expected '}'
+   63 |     }
+      |      ^
+Node2.cc:45:29: note: to match this '{'
+   45 | void Node2::forwardMessage(){
+      |                             ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node2.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:24:47 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:25:39 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:28:24 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:28:41 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:31:25 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:31:56 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:34:13 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Node2.cc:46:9: warning: variable 'nextId' set but not used [-Wunused-but-set-variable]
+   46 |     int nextId;
+      |         ^
+1 warning generated.
+Creating executable: out/clang-debug//distrlab03_dbg
+20:36:00 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+Node2.cc
+Creating executable: out/clang-debug//distrlab03_dbg
+20:44:27 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:47:15 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:47:51 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:48:47 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:49:19 **** Incremental Build of configuration debug for project distrlab03 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:37:57 **** Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:38:35 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:38:56 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:39:19 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:42:21 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+In file included from Node.cc:16:
+./Node.h:30:13: warning: private field 'state' is not used [-Wunused-private-field]
+   30 |         int state;
+      |             ^
+1 warning generated.
+Creating executable: out/clang-debug//distlab06_dbg
+19:43:43 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:44:20 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:45:50 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Node.cc:27:20: warning: unused variable 'msg' [-Wunused-variable]
+   27 |         cMessage * msg = new cMessage("hello", 0);
+      |                    ^~~
+1 warning generated.
+Creating executable: out/clang-debug//distlab06_dbg
+19:49:25 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:53:25 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:55:27 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:56:02 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+19:59:41 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distlab06_dbg
+20:00:40 **** Incremental Build of configuration debug for project distlab06 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:11:31 **** Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab07_dbg
+20:15:59 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:16:32 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:27:33 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:28:00 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:28:50 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:30:57 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:44:31 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:45:29 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:48:20 **** Incremental Build of configuration release for project distrlab07 ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//distrlab07
+20:49:07 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.

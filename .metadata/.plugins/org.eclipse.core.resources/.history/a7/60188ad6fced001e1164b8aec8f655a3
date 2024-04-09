@@ -1,0 +1,9 @@
+[General]
+
+[Config simpleTestWith2Nodes]
+network = Network
+
+[Config simpleTest2]
+network = Network2
+Network2.totalNodes = 10
+Network2.Node[]*.totalNodes = 6

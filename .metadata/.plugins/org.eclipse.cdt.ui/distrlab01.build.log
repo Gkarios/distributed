@@ -1,0 +1,6 @@
+18:43:07 **** Incremental Build of configuration debug for project distrlab01 ****
+make MODE=debug all 
+Creating executable: out/clang-debug//distrlab01_dbg
+
+18:43:08 Build Finished. 0 errors, 0 warnings. (took 319ms)
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="TemplateBasedWizard">
+		<item key="project.template" value="bundleentry://443.fwk158667857/template/emptyproject/"/>
+		<item key="simplemodule.template" value="bundleentry://457.fwk158667857/templates/emptysimplemodule/"/>
+		<item key="network.template" value="bundleentry://457.fwk158667857/templates/emptynetwork/"/>
+		<item key="nedfile.template" value="bundleentry://457.fwk158667857/templates/emptynedfile/"/>
+	</section>
+</section>

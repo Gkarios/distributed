@@ -1,0 +1,46 @@
+version 3
+run simpleTest2-0-20240329-20:49:23-10007
+attr configname simpleTest2
+attr datetime 20240329-20:49:23
+attr datetimef 20240329-204923
+attr experiment simpleTest2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network2
+attr processid 10007
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config network Network2
+config **totalNodes 7
+
+par Network2.node[0] typename "\"Node2\""
+par Network2.node[0] totalNodes 7
+par Network2.node[0] nodeID 1000
+par Network2.node[1] typename "\"Node2\""
+par Network2.node[1] totalNodes 7
+par Network2.node[1] nodeID 1001
+par Network2.node[2] typename "\"Node2\""
+par Network2.node[2] totalNodes 7
+par Network2.node[2] nodeID 1002
+par Network2.node[3] typename "\"Node2\""
+par Network2.node[3] totalNodes 7
+par Network2.node[3] nodeID 1003
+par Network2.node[4] typename "\"Node2\""
+par Network2.node[4] totalNodes 7
+par Network2.node[4] nodeID 1004
+par Network2.node[5] typename "\"Node2\""
+par Network2.node[5] totalNodes 7
+par Network2.node[5] nodeID 1005
+par Network2.node[6] typename "\"Node2\""
+par Network2.node[6] totalNodes 7
+par Network2.node[6] nodeID 1006
+par Network2 typename "\"Network2\""
+par Network2 totalNodes 7
+

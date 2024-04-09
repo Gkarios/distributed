@@ -1,0 +1,30 @@
+version 3
+run General-0-20240405-20:00:42-7315
+attr configname General
+attr datetime 20240405-20:00:42
+attr datetimef 20240405-200042
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 7315
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config network Network
+
+par Network.node[0] typename "\"Node\""
+par Network.node[0] nodeId 1000
+par Network.node[0] state 0
+par Network.node[1] typename "\"Node\""
+par Network.node[1] nodeId 1001
+par Network.node[1] state 0
+par Network typename "\"Network\""
+par Network totalNodes 2
+

@@ -1,0 +1,7 @@
+18:50:56 **** Incremental Build of configuration debug for project distrlab02 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab02_dbg
+
+18:50:58 Build Finished. 0 errors, 0 warnings. (took 1s.577ms)
+
