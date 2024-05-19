@@ -1,8 +1,0 @@
-[General]
-num-rngs = 1
-seed-set = 0
-
-*.node[*].nodeId = 1000 + index
-
-
-network = Chain

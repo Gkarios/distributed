@@ -17,7 +17,7 @@ network RandomGeometricGraph
 {
     parameters:
         int totalNodes = default(5);
-        int range = default(250);
+        int range = default(100);
         @display("bgb=1000,1000");
  		 
         submodules:

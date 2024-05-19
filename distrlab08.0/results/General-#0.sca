@@ -1,0 +1,46 @@
+version 3
+run General-0-20240507-21:44:38-61428
+attr configname General
+attr datetime 20240507-21:44:38
+attr datetimef 20240507-214438
+attr experiment General
+attr inifile binaryTree.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network BinaryTree
+attr processid 61428
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network BinaryTree
+
+par BinaryTree.node[0] typename "\"Node\""
+par BinaryTree.node[0] nodeId 1000
+par BinaryTree.node[0] totalNodes 7
+par BinaryTree.node[1] typename "\"Node\""
+par BinaryTree.node[1] nodeId 1001
+par BinaryTree.node[1] totalNodes 7
+par BinaryTree.node[2] typename "\"Node\""
+par BinaryTree.node[2] nodeId 1002
+par BinaryTree.node[2] totalNodes 7
+par BinaryTree.node[3] typename "\"Node\""
+par BinaryTree.node[3] nodeId 1003
+par BinaryTree.node[3] totalNodes 7
+par BinaryTree.node[4] typename "\"Node\""
+par BinaryTree.node[4] nodeId 1004
+par BinaryTree.node[4] totalNodes 7
+par BinaryTree.node[5] typename "\"Node\""
+par BinaryTree.node[5] nodeId 1005
+par BinaryTree.node[5] totalNodes 7
+par BinaryTree.node[6] typename "\"Node\""
+par BinaryTree.node[6] nodeId 1006
+par BinaryTree.node[6] totalNodes 7
+par BinaryTree.controller typename "\"Controller\""
+par BinaryTree typename "\"BinaryTree\""
+par BinaryTree height 2
+par BinaryTree totalNodes 7
+

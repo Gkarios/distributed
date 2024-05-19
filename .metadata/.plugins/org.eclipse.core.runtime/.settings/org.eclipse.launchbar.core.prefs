@@ -1,8 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:distrlab01,org.eclipse.launchbar.core.descriptorType.default\:distrlab02,org.eclipse.launchbar.core.descriptorType.default\:distrlab03,org.eclipse.launchbar.core.descriptorType.default\:distrlab03 - network2,org.eclipse.launchbar.core.descriptorType.default\:distrlab03 (1),org.eclipse.launchbar.core.descriptorType.default\:distlab06,org.eclipse.launchbar.core.descriptorType.default\:distrlab07,org.eclipse.launchbar.core.descriptorType.default\:distrlab07 - RandomGraph,org.eclipse.launchbar.core.descriptorType.default\:distrlab07 (1),org.eclipse.launchbar.core.descriptorType.default\:distrlab07 - randomGeometricGraph
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:distrlab01,org.eclipse.launchbar.core.descriptorType.default\:distrlab02,org.eclipse.launchbar.core.descriptorType.default\:distrlab03,org.eclipse.launchbar.core.descriptorType.default\:distrlab03 - network2,org.eclipse.launchbar.core.descriptorType.default\:distrlab03 (1),org.eclipse.launchbar.core.descriptorType.default\:distlab06,org.eclipse.launchbar.core.descriptorType.default\:distrlab07,org.eclipse.launchbar.core.descriptorType.default\:distrlab07 - RandomGraph,org.eclipse.launchbar.core.descriptorType.default\:distrlab07 - randomGeometricGraph,org.eclipse.launchbar.core.descriptorType.default\:distrlab07 (1),org.eclipse.launchbar.core.descriptorType.default\:distrlab08.0,org.eclipse.launchbar.core.descriptorType.default\:distrlab08.0 (1),org.eclipse.launchbar.core.descriptorType.default\:distrlab08.0 - binaryTree,org.eclipse.launchbar.core.descriptorType.default\:Final,org.eclipse.launchbar.core.descriptorType.default\:Final (1),org.eclipse.launchbar.core.descriptorType.default\:Final (2)
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Final\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Final\ (2)/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:distrlab01/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:distrlab01/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:distrlab02/activeLaunchMode=debug
@@ -11,4 +13,7 @@ org.eclipse.launchbar.core.descriptorType.default\:distrlab03\ (1)/activeLaunchM
 org.eclipse.launchbar.core.descriptorType.default\:distrlab03\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:distrlab03\ -\ network2/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:distrlab03/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:distrlab07\ (1)/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:distrlab07\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:distrlab07\ -\ randomGeometricGraph/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:distrlab08.0\ -\ binaryTree/activeLaunchMode=run

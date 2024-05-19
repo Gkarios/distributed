@@ -456,3 +456,850 @@ Creating executable: out/clang-release//distrlab07
 20:49:07 **** Incremental Build of configuration debug for project distrlab07 ****
 make MODE=debug all 
 make: Nothing to be done for 'all'.
+18:31:06 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:31:51 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:32:43 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:32:57 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:33:36 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:33:50 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:34:20 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:39:50 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+18:40:13 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:18:32 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:18:42 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:19:06 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:21:13 **** Incremental Build of configuration debug for project distrlab07 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:31:58 **** Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+19:38:27 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:38:59 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:39:25 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:39:58 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:51:35 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Node.cc:24:21: error: unknown type name 'i'
+   24 |     visited = false;i
+      |                     ^
+Node.cc:28:51: error: use of undeclared identifier 'kind'
+   28 |         cMessage * msg = new cMessage("flooding", kind = 0);
+      |                                                   ^
+Node.cc:30:33: error: expected expression
+   30 |             send(msg, "port$o", );
+      |                                 ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+19:52:32 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+19:53:25 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:53:49 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:55:23 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+19:55:37 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:56:19 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:57:24 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+19:58:36 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:00:04 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:01:33 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:05:27 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Node.cc:39:14: error: expected unqualified-id
+   39 |     for (int = 0; i< nodeNeighbors; i++){
+      |              ^
+Node.cc:39:19: error: expected ';' in 'for' statement specifier
+   39 |     for (int = 0; i< nodeNeighbors; i++){
+      |                   ^
+Node.cc:39:22: error: use of undeclared identifier 'nodeNeighbors'
+   39 |     for (int = 0; i< nodeNeighbors; i++){
+      |                      ^
+Node.cc:39:19: error: use of undeclared identifier 'i'
+   39 |     for (int = 0; i< nodeNeighbors; i++){
+      |                   ^
+Node.cc:39:37: error: use of undeclared identifier 'i'
+   39 |     for (int = 0; i< nodeNeighbors; i++){
+      |                                     ^
+Node.cc:40:36: error: use of undeclared identifier 'i'
+   40 |         send(msg->dup(), "port$o", i);
+      |                                    ^
+6 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:05:38 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Node.cc:39:24: error: use of undeclared identifier 'nodeNeighbors'
+   39 |     for (int i = 0; i< nodeNeighbors; i++){
+      |                        ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:05:58 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:06:44 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:07:16 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:08:17 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:09:08 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:10:14 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:10:25 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:10:56 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:16:48 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:18:08 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:25:18 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:28:23 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+In file included from controller.cc:16:
+./controller.h:31:5: error: no template named 'vector'; did you mean 'std::vector'?
+   31 |     vector<Node*> = nodes;
+      |     ^~~~~~
+      |     std::vector
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/bits/stl_vector.h:425:11: note: 'std::vector' declared here
+  425 |     class vector : protected _Vector_base<_Tp, _Alloc>
+      |           ^
+In file included from controller.cc:16:
+./controller.h:31:19: error: expected member name or ';' after declaration specifiers
+   31 |     vector<Node*> = nodes;
+      |     ~~~~~~~~~~~~~ ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:28:53 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+In file included from controller.cc:16:
+./controller.h:31:5: error: no template named 'vector'; did you mean 'std::vector'?
+   31 |     vector <Node*> = nodes;
+      |     ^~~~~~
+      |     std::vector
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/bits/stl_vector.h:425:11: note: 'std::vector' declared here
+  425 |     class vector : protected _Vector_base<_Tp, _Alloc>
+      |           ^
+In file included from controller.cc:16:
+./controller.h:31:20: error: expected member name or ';' after declaration specifiers
+   31 |     vector <Node*> = nodes;
+      |     ~~~~~~~~~~~~~~ ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:32:28 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+In file included from controller.cc:16:
+./controller.h:31:25: error: expected member name or ';' after declaration specifiers
+   31 |     std::vector <Node*> = node;
+      |     ~~~~~~~~~~~~~~~~~~~ ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:35:13 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+In file included from controller.cc:16:
+./controller.h:31:24: error: expected member name or ';' after declaration specifiers
+   31 |     std::vector<Node*> = node;
+      |     ~~~~~~~~~~~~~~~~~~ ^
+controller.cc:23:18: error: use of undeclared identifier 'getParentNodes'; did you mean 'getParentModule'?
+   23 |     totalNodes = getParentNodes()->par("totalNodes");
+      |                  ^~~~~~~~~~~~~~
+      |                  getParentModule
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmodule.h:596:22: note: 'getParentModule' declared here
+  596 |     virtual cModule *getParentModule() const override  { return parentModule; }
+      |                      ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:36:38 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+In file included from controller.cc:16:
+./controller.h:31:24: error: expected member name or ';' after declaration specifiers
+   31 |     std::vector<Node*> = node;
+      |     ~~~~~~~~~~~~~~~~~~ ^
+controller.cc:23:18: error: use of undeclared identifier 'getParentNode'; did you mean 'getParentModule'?
+   23 |     totalNodes = getParentNode()->par("totalNodes");
+      |                  ^~~~~~~~~~~~~
+      |                  getParentModule
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmodule.h:596:22: note: 'getParentModule' declared here
+  596 |     virtual cModule *getParentModule() const override  { return parentModule; }
+      |                      ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:38:35 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+controller.cc:23:18: error: use of undeclared identifier 'getParentNode'; did you mean 'getParentModule'?
+   23 |     totalNodes = getParentNode()->par("totalNodes");
+      |                  ^~~~~~~~~~~~~
+      |                  getParentModule
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmodule.h:596:22: note: 'getParentModule' declared here
+  596 |     virtual cModule *getParentModule() const override  { return parentModule; }
+      |                      ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:39:31 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:43:17 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+controller.cc:25:16: warning: unused variable 'node' [-Wunused-variable]
+   25 |         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+      |                ^~~~
+1 warning generated.
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:52:37 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+controller.cc:36:25: error: 'visited' is a protected member of 'Node'
+   36 |         if(nodes.at(i)->visited()){
+      |                         ^
+./Node.h:35:10: note: declared protected here
+   35 |     bool visited;
+      |          ^
+controller.cc:36:32: error: called object type 'bool' is not a function or function pointer
+   36 |         if(nodes.at(i)->visited()){
+      |            ~~~~~~~~~~~~~~~~~~~~^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:53:14 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+Node.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:55:44 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+20:56:10 **** Incremental Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+10:01:10 **** Build of configuration debug for project distrlab08.0 ****
+make MODE=debug all 
+controller.cc
+Creating executable: out/clang-debug//distrlab08.0_dbg
+19:15:07 **** Build of configuration release for project distrlab08.0 ****
+make MODE=release all 
+controller.cc
+Node.cc
+Creating executable: out/clang-release//distrlab08.0
+21:44:36 **** Incremental Build of configuration release for project distrlab08.0 ****
+make MODE=release all 
+controller.cc
+Creating executable: out/clang-release//distrlab08.0
+14:31:21 **** Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+14:33:10 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:52:53 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+17:28:17 **** Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+17:31:11 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+17:31:29 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:32:23 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:35:12 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:35:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:36:04 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:36:10 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:36:43 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:37:17 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:38:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:39:33 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:40:19 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:43:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:43:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:44:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:45:23 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:45:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:45:59 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:46:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:47:16 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:47:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:27:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:27:27 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:28:27 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:28:49 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:29:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:29:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:29:54 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:43:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:30:11: error: return type of out-of-line definition of 'Node::getVisited' differs from that in the declaration
+   30 | int Node::getVisited(){
+      | ~~~       ^
+./Node.h:37:10: note: previous declaration is here
+   37 |     bool getVisited();
+      |     ~~~~ ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:45:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:45:50 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:47:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:25:13: error: no viable conversion from 'cMessage *' to 'cMessage'
+   25 |    cMessage msg = new cMessage("flood", 0);
+      |             ^     ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:172:5: note: candidate constructor not viable: no known conversion from 'cMessage *' to 'const cMessage &' for 1st argument; dereference the argument with *
+  172 |     cMessage(const cMessage& msg);
+      |     ^        ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:177:14: note: explicit constructor is not a candidate
+  177 |     explicit cMessage(const char *name=nullptr, short kind=0);
+      |              ^
+Node.cc:26:36: error: no viable conversion from 'cMessage' to 'cMessage *'
+   26 |    scheduleAfter(simTime() + 0.01, msg);
+      |                                    ^~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/csimplemodule.h:538:59: note: passing argument to parameter 'msg' here
+  538 |     virtual void scheduleAfter(simtime_t delay, cMessage *msg);
+      |                                                           ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:28:06 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:24:4: error: use of undeclared identifier 'totalNodes'
+   24 |    totalNodes = getParentModule()->par("totalNodes");
+      |    ^
+Node.cc:25:4: error: use of undeclared identifier 'numNeighbors'
+   25 |    numNeighbors = gateSize("port");
+      |    ^
+Node.cc:27:11: error: use of undeclared identifier 'myId'
+   27 |        if(myId == 1000){
+      |           ^
+Node.cc:28:17: error: use of undeclared identifier 'totalNodes'; did you mean 'totalorder'?
+   28 |           EV << totalNodes << endl;
+      |                 ^~~~~~~~~~
+      |                 totalorder
+/usr/include/bits/mathcalls.h:411:20: note: 'totalorder' declared here
+  411 | __MATHDECL_1 (int, totalorder,, (const _Mdouble_ *__x,
+      |                    ^
+Node.cc:28:17: warning: address of function 'totalorder' will always evaluate to 'true' [-Wpointer-bool-conversion]
+   28 |           EV << totalNodes << endl;
+      |              ~~ ^~~~~~~~~~
+Node.cc:28:17: note: prefix with the address-of operator to silence this warning
+   28 |           EV << totalNodes << endl;
+      |                 ^
+      |                 &
+Node.cc:31:29: error: use of undeclared identifier 'numNeighbors'
+   31 |           for (int i=0; i < numNeighbors; i++){
+      |                             ^
+1 warning and 5 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+12:28:56 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:27:11: error: use of undeclared identifier 'myId'
+   27 |        if(myId == 1000){
+      |           ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+12:29:08 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:50:21: warning: variable 'i' is uninitialized when used here [-Wuninitialized]
+   50 |         for (int i; i<gateSize("port"); i++){
+      |                     ^
+Node.cc:50:19: note: initialize the variable 'i' to silence this warning
+   50 |         for (int i; i<gateSize("port"); i++){
+      |                   ^
+      |                    = 0
+1 warning generated.
+Creating executable: out/clang-debug//Final_dbg
+12:29:10 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+12:37:44 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:31:11: error: use of undeclared identifier 'spreadMessage'
+   31 |           spreadMessage();
+      |           ^
+Node.cc:47:9: error: use of undeclared identifier 'spreadMessage'
+   47 |         spreadMessage();
+      |         ^
+Node.cc:54:19: error: use of undeclared identifier 'numNeighbors'
+   54 |     for (int i; i<numNeighbors; i++){
+      |                   ^
+Node.cc:55:25: error: use of undeclared identifier 'gate'
+   55 |         send(msg->dup(),gate("port$o", i));
+      |                         ^
+Node.cc:55:14: error: use of undeclared identifier 'msg'
+   55 |         send(msg->dup(),gate("port$o", i));
+      |              ^
+5 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:19:13 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:31:11: error: use of undeclared identifier 'spreadMessage'
+   31 |           spreadMessage();
+      |           ^
+Node.cc:47:9: error: use of undeclared identifier 'spreadMessage'
+   47 |         spreadMessage(message);
+      |         ^
+Node.cc:53:26: error: use of undeclared identifier 'msg'; did you mean 'osg'?
+   53 | void Node::spreadMessage(msg){
+      |                          ^~~
+      |                          osg
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cosgcanvas.h:23:11: note: 'osg' declared here
+   23 | namespace osg { class Node;  }
+      |           ^
+Node.cc:53:12: error: no member named 'spreadMessage' in 'Node'
+   53 | void Node::spreadMessage(msg){
+      |      ~~~~~~^
+Node.cc:53:26: error: unexpected namespace name 'osg': expected expression
+   53 | void Node::spreadMessage(msg){
+      |                          ^
+Node.cc:53:30: error: expected ';' after top level declarator
+   53 | void Node::spreadMessage(msg){
+      |                              ^
+      |                              ;
+6 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:21:16 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:20:26: error: use of undeclared identifier 'msg'; did you mean 'osg'?
+   20 | void Node::spreadMessage(msg){
+      |                          ^~~
+      |                          osg
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cosgcanvas.h:23:11: note: 'osg' declared here
+   23 | namespace osg { class Node;  }
+      |           ^
+Node.cc:20:12: error: no member named 'spreadMessage' in 'Node'
+   20 | void Node::spreadMessage(msg){
+      |      ~~~~~~^
+Node.cc:20:26: error: unexpected namespace name 'osg': expected expression
+   20 | void Node::spreadMessage(msg){
+      |                          ^
+Node.cc:20:30: error: expected ';' after top level declarator
+   20 | void Node::spreadMessage(msg){
+      |                              ^
+      |                              ;
+4 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:22:15 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:20:12: error: out-of-line definition of 'spreadMessage' does not match any declaration in 'Node'
+   20 | void Node::spreadMessage(cMessage *msg){
+      |            ^~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:22:47 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+In file included from Node.cc:16:
+./Node.h:37:18: error: 'spreadMessage' marked 'override' but does not override any member functions
+   37 |     virtual void spreadMessage(cMessage *msg) override;
+      |                  ^
+Node.cc:53:23: error: no viable conversion from 'std::string' (aka 'basic_string<char>') to 'cMessage *'
+   53 |         spreadMessage(message);
+      |                       ^~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/basic_string.h:949:7: note: candidate function
+  949 |       operator __sv_type() const noexcept
+      |       ^
+Node.cc:20:36: note: passing argument to parameter 'msg' here
+   20 | void Node::spreadMessage(cMessage *msg){
+      |                                    ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:23:39 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+In file included from Node.cc:16:
+./Node.h:37:18: error: 'spreadMessage' marked 'override' but does not override any member functions
+   37 |     virtual void spreadMessage(cMessage *msg) override;
+      |                  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Node.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:24:12 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Node.cc:21:17: warning: variable 'i' is uninitialized when used here [-Wuninitialized]
+   21 |     for (int i; i<gateSize("port"); i++){
+      |                 ^
+Node.cc:21:15: note: initialize the variable 'i' to silence this warning
+   21 |     for (int i; i<gateSize("port"); i++){
+      |               ^
+      |                = 0
+1 warning generated.
+Creating executable: out/clang-debug//Final_dbg
+13:24:40 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+13:27:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+13:30:19 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+13:30:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:33:26 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:33:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:44:08 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:16:
+./Controller.h:23:17: error: use of undeclared identifier 'Node'
+   23 |     std::vector<Node*> nodes;
+      |                 ^
+./Controller.h:23:22: error: expected expression
+   23 |     std::vector<Node*> nodes;
+      |                      ^
+Controller.cc:18:1: error: cannot initialize a variable of type 'omnetpp::cModule *' with an rvalue of type 'Controller *'
+   18 | Define_Module(Controller);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:82: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                                                                                  ^     ~~~~~~~~~~~~~
+Controller.cc:22:18: error: cannot initialize object parameter of type 'const omnetpp::cModule' with an expression of type 'Controller'
+   22 |     totalNodes = getParentModule()->par("totalNodes");
+      |                  ^~~~~~~~~~~~~~~
+Controller.cc:24:9: error: unknown type name 'Node'; did you mean 'osg::Node'?
+   24 |         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+      |         ^~~~
+      |         osg::Node
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cosgcanvas.h:23:23: note: 'osg::Node' declared here
+   23 | namespace osg { class Node;  }
+      |                       ^
+Controller.cc:24:24: error: use of undeclared identifier 'Node'; did you mean 'node'?
+   24 |         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+      |                        ^~~~
+      |                        node
+Controller.cc:24:16: note: 'node' declared here
+   24 |         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+      |                ^
+Controller.cc:24:29: error: expected expression
+   24 |         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+      |                             ^
+Controller.cc:28:5: error: cannot initialize object parameter of type 'omnetpp::cSimpleModule' with an expression of type 'Controller'
+   28 |     scheduleAt(simTime() + 1, msg);
+      |     ^~~~~~~~~~
+Controller.cc:37:13: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   37 |             EV << "success" << endl;
+      |             ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:211:40: note: expanded from macro 'OPP_LOGPROXY'
+  211 |     omnetpp::cLog::runtimeLogPredicate(object, logLevel, category))) ? \
+      |                                        ^~~~~~
+Controller.cc:37:13: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   37 |             EV << "success" << endl;
+      |             ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:212:78: note: expanded from macro 'OPP_LOGPROXY'
+  212 |     omnetpp::internal::cLogProxy::dummyStream : omnetpp::internal::cLogProxy(object, logLevel, category, __FILE__, __LINE__, __FUNCTION__)
+      |                                                                              ^~~~~~
+Controller.cc:41:9: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   41 |         EV << 'connected' <<endl;
+      |         ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:211:40: note: expanded from macro 'OPP_LOGPROXY'
+  211 |     omnetpp::cLog::runtimeLogPredicate(object, logLevel, category))) ? \
+      |                                        ^~~~~~
+Controller.cc:41:9: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   41 |         EV << 'connected' <<endl;
+      |         ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:212:78: note: expanded from macro 'OPP_LOGPROXY'
+  212 |     omnetpp::internal::cLogProxy::dummyStream : omnetpp::internal::cLogProxy(object, logLevel, category, __FILE__, __LINE__, __FUNCTION__)
+      |                                                                              ^~~~~~
+Controller.cc:41:15: warning: multi-character character constant [-Wmultichar]
+   41 |         EV << 'connected' <<endl;
+      |               ^
+Controller.cc:41:15: warning: character constant too long for its type
+Controller.cc:44:9: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   44 |         EV << "fail" << endl;
+      |         ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:211:40: note: expanded from macro 'OPP_LOGPROXY'
+  211 |     omnetpp::cLog::runtimeLogPredicate(object, logLevel, category))) ? \
+      |                                        ^~~~~~
+Controller.cc:44:9: error: cannot initialize object parameter of type 'const omnetpp::cComponent' with an expression of type 'Controller'
+   44 |         EV << "fail" << endl;
+      |         ^~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:49: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                                 ^~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:212:78: note: expanded from macro 'OPP_LOGPROXY'
+  212 |     omnetpp::internal::cLogProxy::dummyStream : omnetpp::internal::cLogProxy(object, logLevel, category, __FILE__, __LINE__, __FUNCTION__)
+      |                                                                              ^~~~~~
+2 warnings and 14 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:51:17 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Controller.cc:35:25: error: no member named 'isVisited' in 'Node'; did you mean 'getVisited'?
+   35 |         if(nodes.at(i)->isVisited()){
+      |                         ^~~~~~~~~
+      |                         getVisited
+./Node.h:41:10: note: 'getVisited' declared here
+   41 |     bool getVisited();
+      |          ^
+Controller.cc:41:15: warning: multi-character character constant [-Wmultichar]
+   41 |         EV << 'connected' <<endl;
+      |               ^
+Controller.cc:41:15: warning: character constant too long for its type
+2 warnings and 1 error generated.
+make: *** [Makefile:108: out/clang-debug//Controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:53:58 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Controller.cc:35:25: error: no member named 'isVisited' in 'Node'; did you mean 'getVisited'?
+   35 |         if(nodes.at(i)->isVisited()){
+      |                         ^~~~~~~~~
+      |                         getVisited
+./Node.h:41:10: note: 'getVisited' declared here
+   41 |     bool getVisited();
+      |          ^
+Controller.cc:41:15: warning: multi-character character constant [-Wmultichar]
+   41 |         EV << 'connected' <<endl;
+      |               ^
+Controller.cc:41:15: warning: character constant too long for its type
+2 warnings and 1 error generated.
+make: *** [Makefile:108: out/clang-debug//Controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+13:56:38 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+13:57:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
