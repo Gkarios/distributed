@@ -22,4 +22,5 @@ simple Controller
         int totalNodes;
         @display("p=0.02,0.98");
         int seednum;
+        int node;
 }

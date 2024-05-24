@@ -17,11 +17,6 @@
 
 Define_Module(Node);
 
-void Node::spreadMessage(cMessage *msg){
-    for (int i = 0; i<gateSize("port"); i++){
-        send(msg->dup(),gate("port$o", i));
-    }
-}
 
 void Node::initialize()
 {
@@ -57,3 +52,8 @@ void Node::handleMessage(cMessage *msg)
 
 
 
+void Node::spreadMessage(cMessage *msg){
+    for (int i = 0; i<gateSize("port"); i++){
+        send(msg->dup(),gate("port$o", i));
+    }
+}

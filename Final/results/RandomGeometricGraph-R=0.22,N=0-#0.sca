@@ -1,8 +1,8 @@
 version 3
-run RandomGeometricGraph-4-20240510-13:30:24-6229
+run RandomGeometricGraph-4-20240524-18:20:39-4211
 attr configname RandomGeometricGraph
-attr datetime 20240510-13:30:24
-attr datetimef 20240510-133024
+attr datetime 20240524-18:20:39
+attr datetimef 20240524-182039
 attr experiment RandomGeometricGraph
 attr inifile omnetpp.ini
 attr iterationvars "$R=0.22, $N=0"
@@ -10,7 +10,7 @@ attr iterationvarsd R=0.22/N=0
 attr iterationvarsf R=0.22,N=0-
 attr measurement "$R=0.22, $N=0"
 attr network RGG
-attr processid 6229
+attr processid 4211
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -19,7 +19,7 @@ attr seedset 0
 itervar N 0
 itervar R 0.22
 config network RGG
-config **.totalNodes 20
+config **.totalNodes 10
 config *.rc 0.22
 config **.seednum 0
 config num-rngs 1
@@ -49,30 +49,6 @@ attr mutable ""
 par RGG.node[9].port$o[0].channel delay 0.1s
 attr mutable ""
 attr unit s
-par RGG.node[0].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[0].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[0].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[0].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[0].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[0].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[12].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[12].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[12].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
 par RGG.node[1].port$o[0].channel typename "\"ned.DelayChannel\""
 par RGG.node[1].port$o[0].channel disabled false
 attr mutable ""
@@ -97,54 +73,6 @@ attr mutable ""
 par RGG.node[3].port$o[0].channel delay 0.1s
 attr mutable ""
 attr unit s
-par RGG.node[1].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[1].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[1].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[10].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[10].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[10].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[1].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[1].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[1].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[13].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[13].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[13].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[1].port$o[4].channel typename "\"ned.DelayChannel\""
-par RGG.node[1].port$o[4].channel disabled false
-attr mutable ""
-par RGG.node[1].port$o[4].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[17].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[17].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[17].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[1].port$o[5].channel typename "\"ned.DelayChannel\""
-par RGG.node[1].port$o[5].channel disabled false
-attr mutable ""
-par RGG.node[1].port$o[5].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[19].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[19].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[19].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
 par RGG.node[2].port$o[1].channel typename "\"ned.DelayChannel\""
 par RGG.node[2].port$o[1].channel disabled false
 attr mutable ""
@@ -155,18 +83,6 @@ par RGG.node[3].port$o[1].channel typename "\"ned.DelayChannel\""
 par RGG.node[3].port$o[1].channel disabled false
 attr mutable ""
 par RGG.node[3].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[2].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[2].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[2].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[10].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[10].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[10].port$o[1].channel delay 0.1s
 attr mutable ""
 attr unit s
 par RGG.node[4].port$o[1].channel typename "\"ned.DelayChannel\""
@@ -181,42 +97,6 @@ attr mutable ""
 par RGG.node[9].port$o[1].channel delay 0.1s
 attr mutable ""
 attr unit s
-par RGG.node[4].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[4].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[4].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[5].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[5].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[5].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[5].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[5].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[5].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[12].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[12].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[12].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
 par RGG.node[6].port$o[0].channel typename "\"ned.DelayChannel\""
 par RGG.node[6].port$o[0].channel disabled false
 attr mutable ""
@@ -227,162 +107,6 @@ par RGG.node[9].port$o[2].channel typename "\"ned.DelayChannel\""
 par RGG.node[9].port$o[2].channel disabled false
 attr mutable ""
 par RGG.node[9].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[6].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[6].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[6].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[6].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[6].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[6].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[12].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[12].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[12].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[7].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[7].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[7].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[18].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[18].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[18].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[9].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[9].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[9].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[4].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[4].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[4].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[9].port$o[4].channel typename "\"ned.DelayChannel\""
-par RGG.node[9].port$o[4].channel disabled false
-attr mutable ""
-par RGG.node[9].port$o[4].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[12].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[12].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[12].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[10].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[10].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[10].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[13].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[13].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[13].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[10].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[10].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[10].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[17].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[17].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[17].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[10].port$o[4].channel typename "\"ned.DelayChannel\""
-par RGG.node[10].port$o[4].channel disabled false
-attr mutable ""
-par RGG.node[10].port$o[4].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[19].port$o[1].channel typename "\"ned.DelayChannel\""
-par RGG.node[19].port$o[1].channel disabled false
-attr mutable ""
-par RGG.node[19].port$o[1].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[11].port$o[5].channel typename "\"ned.DelayChannel\""
-par RGG.node[11].port$o[5].channel disabled false
-attr mutable ""
-par RGG.node[11].port$o[5].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[12].port$o[4].channel typename "\"ned.DelayChannel\""
-par RGG.node[12].port$o[4].channel disabled false
-attr mutable ""
-par RGG.node[12].port$o[4].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[13].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[13].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[13].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[17].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[17].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[17].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[13].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[13].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[13].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[19].port$o[2].channel typename "\"ned.DelayChannel\""
-par RGG.node[19].port$o[2].channel disabled false
-attr mutable ""
-par RGG.node[19].port$o[2].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[14].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[14].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[14].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[16].port$o[0].channel typename "\"ned.DelayChannel\""
-par RGG.node[16].port$o[0].channel disabled false
-attr mutable ""
-par RGG.node[16].port$o[0].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[17].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[17].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[17].port$o[3].channel delay 0.1s
-attr mutable ""
-attr unit s
-par RGG.node[19].port$o[3].channel typename "\"ned.DelayChannel\""
-par RGG.node[19].port$o[3].channel disabled false
-attr mutable ""
-par RGG.node[19].port$o[3].channel delay 0.1s
 attr mutable ""
 attr unit s
 par RGG.node[0] typename "\"Node\""
@@ -425,50 +149,10 @@ par RGG.node[9] typename "\"Node\""
 par RGG.node[9] nodeID 1009
 par RGG.node[9] xPos 0.383442
 par RGG.node[9] yPos 0.477665
-par RGG.node[10] typename "\"Node\""
-par RGG.node[10] nodeID 1010
-par RGG.node[10] xPos 0.791725
-par RGG.node[10] yPos 0.812169
-par RGG.node[11] typename "\"Node\""
-par RGG.node[11] nodeID 1011
-par RGG.node[11] xPos 0.528895
-par RGG.node[11] yPos 0.479977
-par RGG.node[12] typename "\"Node\""
-par RGG.node[12] nodeID 1012
-par RGG.node[12] xPos 0.568045
-par RGG.node[12] yPos 0.392785
-par RGG.node[13] typename "\"Node\""
-par RGG.node[13] nodeID 1013
-par RGG.node[13] xPos 0.925597
-par RGG.node[13] yPos 0.836079
-par RGG.node[14] typename "\"Node\""
-par RGG.node[14] nodeID 1014
-par RGG.node[14] xPos 0.0710361
-par RGG.node[14] yPos 0.337396
-par RGG.node[15] typename "\"Node\""
-par RGG.node[15] nodeID 1015
-par RGG.node[15] xPos 0.0871293
-par RGG.node[15] yPos 0.648172
-par RGG.node[16] typename "\"Node\""
-par RGG.node[16] nodeID 1016
-par RGG.node[16] xPos 0.0202184
-par RGG.node[16] yPos 0.368242
-par RGG.node[17] typename "\"Node\""
-par RGG.node[17] nodeID 1017
-par RGG.node[17] xPos 0.83262
-par RGG.node[17] yPos 0.957155
-par RGG.node[18] typename "\"Node\""
-par RGG.node[18] nodeID 1018
-par RGG.node[18] xPos 0.778157
-par RGG.node[18] yPos 0.140351
-par RGG.node[19] typename "\"Node\""
-par RGG.node[19] nodeID 1019
-par RGG.node[19] xPos 0.870012
-par RGG.node[19] yPos 0.870087
 par RGG.controller typename "\"Controller\""
-par RGG.controller totalNodes 20
+par RGG.controller totalNodes 10
 par RGG.controller seednum 0
 par RGG typename "\"RGG\""
-par RGG totalNodes 20
+par RGG totalNodes 10
 par RGG rc 0.22
 

@@ -1303,3 +1303,81 @@ make MODE=release all
 Controller.cc
 Node.cc
 Creating executable: out/clang-release//Final
+17:55:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+17:58:23 **** Build of configuration release for project distrlab08.0 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:05:57 **** Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:06:09 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:06:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:20:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:20:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:43:12 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+18:49:14 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:15:17 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:15:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:56:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+20:03:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:16:
+./Controller.h:28:18: error: 'startConnected' marked 'override' but does not override any member functions
+   28 |     virtual void startConnected() override;
+      |                  ^
+Controller.cc:43:13: error: use of undeclared identifier 'StartConnected'; did you mean 'startConnected'?
+   43 |             StartConnected();
+      |             ^~~~~~~~~~~~~~
+      |             startConnected
+./Controller.h:28:18: note: 'startConnected' declared here
+   28 |     virtual void startConnected() override;
+      |                  ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:04:54 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+In file included from Controller.cc:16:
+./Controller.h:28:18: error: 'startConnected' marked 'override' but does not override any member functions
+   28 |     virtual void startConnected() override;
+      |                  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-debug//Controller.o] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+20:05:19 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+20:05:49 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+20:06:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.

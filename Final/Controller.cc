@@ -24,23 +24,37 @@ void Controller::initialize()
         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
         nodes.push_back(node);
     }
-    cMessage *msg = new cMessage("check connected");
+    cMessage *msg = new cMessage("check connected", 0);
     scheduleAt(simTime() + 1, msg);
 }
 
 void Controller::handleMessage(cMessage *msg)
 {
-    int numVisited = 0;
-    for (int i = 0; i<nodes.size(); i++){
-        if(nodes.at(i)->isVisited()){
-            numVisited++;
-            EV << "success" << endl;
+    if (msg->getKind() == 0){
+        int numVisited = 0;
+            for (int i = 0; i<nodes.size(); i++){
+            if(nodes.at(i)->isVisited()){
+                numVisited++;
+                EV << "success" << endl;
+            }
+        }
+        if(numVisited == totalNodes){
+            EV << "connected" <<endl;
+            startConnected();
+
+        }
+        else {
+            EV << "NOT connected!" << endl;
         }
     }
-    if(numVisited == totalNodes){
-        EV << "connected" <<endl;
-    }
-    else {
-        EV << "NOT connected!" << endl;
+}
+
+
+
+void Controller::startConnected(){
+    EV <<"CONNECTED NETWORK || STARTER" << endl;
+    int i;
+    for (i=0; i<totalNodes; i++){
+        nodepragma->at(i)->aridmosneighbors;
     }
 }

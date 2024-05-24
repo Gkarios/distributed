@@ -2671,3 +2671,36 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-05-10 13:57:23.238
 !MESSAGE Indexed 'Final' (2 sources, 481 headers) in 10.1 sec: 51,091 declarations; 93,285 references; 0 unresolved inclusions; 141 syntax errors; 2,169 unresolved names (1.5%)
+!SESSION 2024-05-24 17:55:20.224 -----------------------------------------------
+eclipse.buildId=6.0.2.231006-7d5ca33dba
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2024-05-24 17:55:25.195
+!MESSAGE OMNeT++ IDE 6.0.2.231006-7d5ca33dba started.
+!SESSION 2024-05-24 19:12:34.639 -----------------------------------------------
+eclipse.buildId=6.0.2.231006-7d5ca33dba
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2024-05-24 19:12:39.181
+!MESSAGE OMNeT++ IDE 6.0.2.231006-7d5ca33dba started.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-24 20:05:07.003
+!MESSAGE Indexed 'Final' (2 sources, 481 headers) in 12.8 sec: 51,093 declarations; 93,325 references; 0 unresolved inclusions; 141 syntax errors; 2,169 unresolved names (1.5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-24 20:05:56.429
+!MESSAGE Indexed 'Final' (2 sources, 481 headers) in 6.58 sec: 51,093 declarations; 93,325 references; 0 unresolved inclusions; 141 syntax errors; 2,169 unresolved names (1.5%)
+!SESSION 2024-05-24 21:24:44.149 -----------------------------------------------
+eclipse.buildId=6.0.2.231006-7d5ca33dba
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2024-05-24 21:24:49.934
+!MESSAGE OMNeT++ IDE 6.0.2.231006-7d5ca33dba started.
