@@ -1,18 +1,3 @@
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Lesser General Public License for more details.
-// 
-// You should have received a copy of the GNU Lesser General Public License
-// along with this program.  If not, see http://www.gnu.org/licenses/.
-// 
-
 #include "Controller.h"
 
 Define_Module(Controller);
@@ -22,8 +7,11 @@ void Controller::initialize()
     totalNodes = getParentModule()->par("totalNodes");
     for(int i = 0; i < totalNodes; i++){
         Node * node = (Node*) getParentModule()->getSubmodule("node", i);
+        xPos = node->par("xPos");
+        yPos = node->par("yPos");
         nodes.push_back(node);
     }
+
     cMessage *msg = new cMessage("check connected", 0);
     scheduleAt(simTime() + 1, msg);
 }
@@ -31,8 +19,9 @@ void Controller::initialize()
 void Controller::handleMessage(cMessage *msg)
 {
     if (msg->getKind() == 0){
+        delete msg;
         int numVisited = 0;
-            for (int i = 0; i<nodes.size(); i++){
+            for (long unsigned int i = 0; i<nodes.size(); i++){
             if(nodes.at(i)->isVisited()){
                 numVisited++;
                 EV << "success" << endl;
@@ -41,7 +30,6 @@ void Controller::handleMessage(cMessage *msg)
         if(numVisited == totalNodes){
             EV << "connected" <<endl;
             startConnected();
-
         }
         else {
             EV << "NOT connected!" << endl;
@@ -50,11 +38,30 @@ void Controller::handleMessage(cMessage *msg)
 }
 
 
-
 void Controller::startConnected(){
-    EV <<"CONNECTED NETWORK || STARTER" << endl;
-    int i;
-    for (i=0; i<totalNodes; i++){
-        nodepragma->at(i)->aridmosneighbors;
+    isConnected = true;
+    EV << "CONNECTED NETWORK || STARTER" << endl;
+    sink = nodes.at(0);
+    maxNeighbors = nodes.at(0)->gateSize("port");
+
+    for (int i=0; i<totalNodes; i++){
+        numNeighbors = nodes.at(i)->gateSize("port");
+        if (maxNeighbors < numNeighbors){
+            maxNeighbors = numNeighbors;
+            sink = nodes.at(i);
+        }
+    }
+    sink->startSink();
+}
+
+
+void Controller::finish(){
+    EV <<" FINISH CALLED"<<endl;
+    for(int i=0;i<totalNodes;i++){
+        distance = std::sqrt(std::pow(sink->xPos - nodes.at(i)->xPos , 2) + std::pow(sink->yPos - nodes.at(i)->yPos, 2));
+        EV << distance << "\t" <<nodes.at(i)->data << endl;
+        FILE *fp = fopen("results.txt", "a");
+        fprintf(fp, "%f\t%d\n", distance, nodes.at(i)->data);
     }
 }
+

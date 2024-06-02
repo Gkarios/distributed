@@ -21,27 +21,38 @@
 
 using namespace omnetpp;
 
-/**
- * TODO - Generated class
- */
+
 class Node : public cSimpleModule
 {
   protected:
+    Node *parentNode;
+    Node *sink;
     int nodeID;
-    int posX;
-    int posY;
+    double l;
+    double rng;
     bool visited;
+    bool visited2;
+    bool isSink;
     int totalNodes;
     int numNeighbors;
+    int parentGateIndex;
+
     virtual void initialize() override;
     virtual void handleMessage(cMessage *msg) override;
-    virtual void spreadMessage(cMessage *msg);
+
+    void spreadMessage(cMessage *msg);
   public:
     int getNodeID();
-    bool getVisited();
+//    int Counter;
     bool isVisited(){
         return visited;
     }
+
+    double xPos;
+    double yPos;
+    double distance;
+    int data;
+    void startSink();
 };
 
 #endif

@@ -1,8 +1,8 @@
 version 3
-run RandomGeometricGraph-9-20240524-20:06:08-20376
+run RandomGeometricGraph-9-20240530-18:02:37-2442
 attr configname RandomGeometricGraph
-attr datetime 20240524-20:06:08
-attr datetimef 20240524-200608
+attr datetime 20240530-18:02:37
+attr datetimef 20240530-180237
 attr experiment RandomGeometricGraph
 attr inifile omnetpp.ini
 attr iterationvars "$R=0.37, $N=0"
@@ -10,7 +10,7 @@ attr iterationvarsd R=0.37/N=0
 attr iterationvarsf R=0.37,N=0-
 attr measurement "$R=0.37, $N=0"
 attr network RGG
-attr processid 20376
+attr processid 2442
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -591,7 +591,8 @@ par RGG.node[14] xPos 0.0710361
 par RGG.node[14] yPos 0.337396
 par RGG.controller typename "\"Controller\""
 par RGG.controller totalNodes 15
-par RGG.controller seednum 0
+par RGG.controller seednum 1
+par RGG.controller maxNeighbors -1
 par RGG typename "\"RGG\""
 par RGG totalNodes 15
 par RGG rc 0.37

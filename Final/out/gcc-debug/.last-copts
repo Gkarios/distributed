@@ -1,0 +1,1 @@
+-O0 -Wall -ggdb3   -MMD -MP -MF .d  -fPIC  -fno-omit-frame-pointer -DHAVE_SWAPCONTEXT -DWITH_QTENV -DWITH_NETBUILDER -DWITH_OSG -DOMNETPPLIBS_IMPORT  -I. -I/home/gkario/Documents/inf/omnetpp-6.0.2/include

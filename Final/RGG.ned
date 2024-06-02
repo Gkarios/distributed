@@ -18,6 +18,7 @@ network RGG
     parameters:
         int totalNodes = default(5);
         double rc = default(0.1);
+        double l = default(0.1);
         @display("bgb=1,1");
         
     submodules:
@@ -25,7 +26,7 @@ network RGG
         {
             nodeID = 1000 + index;
             xPos = uniform(0,1);
-            yPos =uniform(0,1);
+            yPos = uniform(0,1);
             @display("p=$xPos,$yPos");
 		}
 

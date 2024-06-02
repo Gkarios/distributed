@@ -1381,3 +1381,2102 @@ Creating executable: out/clang-release//Final
 20:06:03 **** Incremental Build of configuration release for project Final ****
 make MODE=release all 
 make: Nothing to be done for 'all'.
+12:58:02 **** Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:58:9: error: use of undeclared identifier 'nodepragma'
+   58 |         nodepragma->at(i)->aridmosneighbors;
+      |         ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:58:23 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+12:59:04 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+12:59:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+22:29:23 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:58:9: error: use of undeclared identifier 'nodepragma'
+   58 |         nodepragma->at(i)->aridmosneighbors;
+      |         ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:29:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:58:9: error: use of undeclared identifier 'nodepragma'
+   58 |         nodepragma->at(i)->aridmosneighbors;
+      |         ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:32:14 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+09:20:22 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:25:40 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:26:50: error: member reference type 'std::vector<Node *> *' is a pointer; did you mean to use '->'?
+   26 |             for (long unsigned int i = 0; i<nodes.size(); i++){
+      |                                             ~~~~~^
+      |                                                  ->
+Controller.cc:27:21: error: member reference type 'std::vector<Node *> *' is a pointer; did you mean to use '->'?
+   27 |             if(nodes.at(i)->isVisited()){
+      |                ~~~~~^
+      |                     ->
+Controller.cc:48:29: error: member reference type 'std::vector<Node *> *' is a pointer; did you mean to use '->'?
+   48 |         numNeighbors = nodes.at(i)->gateSize("port");
+      |                        ~~~~~^
+      |                             ->
+Controller.cc:51:25: error: member reference type 'std::vector<Node *> *' is a pointer; did you mean to use '->'?
+   51 |             sink = nodes.at(i);
+      |                    ~~~~~^
+      |                         ->
+4 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+09:26:19 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+09:27:26 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:27:34 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:27:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:28:01 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:28:22 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:29:04 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:08:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:58:14: error: no viable conversion from 'cMessage *' to 'cMessage'
+   58 |     cMessage sinkMsg = new cMessage("sinkMsg", 2);
+      |              ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:172:5: note: candidate constructor not viable: no known conversion from 'cMessage *' to 'const cMessage &' for 1st argument; dereference the argument with *
+  172 |     cMessage(const cMessage& msg);
+      |     ^        ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:177:14: note: explicit constructor is not a candidate
+  177 |     explicit cMessage(const char *name=nullptr, short kind=0);
+      |              ^
+Node.cc:59:19: error: no viable conversion from 'cMessage' to 'cMessage *'
+   59 |     spreadMessage(sinkMsg);
+      |                   ^~~~~~~
+Node.cc:49:36: note: passing argument to parameter 'msg' here
+   49 | void Node::spreadMessage(cMessage *msg){
+      |                                    ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:08:23 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:58:14: error: no viable conversion from 'cMessage *' to 'cMessage'
+   58 |     cMessage sinkMsg = new cMessage("sinkMsg", 2);
+      |              ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:172:5: note: candidate constructor not viable: no known conversion from 'cMessage *' to 'const cMessage &' for 1st argument; dereference the argument with *
+  172 |     cMessage(const cMessage& msg);
+      |     ^        ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:177:14: note: explicit constructor is not a candidate
+  177 |     explicit cMessage(const char *name=nullptr, short kind=0);
+      |              ^
+Node.cc:59:19: error: no viable conversion from 'cMessage' to 'cMessage *'
+   59 |     spreadMessage(sinkMsg);
+      |                   ^~~~~~~
+Node.cc:49:36: note: passing argument to parameter 'msg' here
+   49 | void Node::spreadMessage(cMessage *msg){
+      |                                    ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:08:58 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:12:37 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:26:29: error: no member named 'isVisited' in 'Node'
+   26 |             if(nodes.at(i)->isVisited()){
+      |                ~~~~~~~~~~~  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:12:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:74:12: error: out-of-line definition of 'getVisited' does not match any declaration in 'Node'
+   74 | bool Node::getVisited(){
+      |            ^~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:14:02 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:74:12: error: redefinition of 'isVisited'
+   74 | bool Node::isVisited(){
+      |            ^
+./Node.h:44:10: note: previous definition is here
+   44 |     bool isVisited(){
+      |          ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:14:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:74:7: error: a type specifier is required for all declarations
+   74 | Node::isVisited(){
+      |       ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:14:28 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:16:24 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:18:50 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+10:19:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:81:22: error: function definition is not allowed here
+   81 | int Node::getNodeID(){
+      |                      ^
+Node.cc:83:2: error: expected '}'
+   83 | }
+      |  ^
+Node.cc:60:23: note: to match this '{'
+   60 | void Node::startSink(){
+      |                       ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:20:00 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:21:24 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:24:34 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+10:35:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+10:36:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+10:38:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:38:28 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:39:14 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:41:07 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:41:07 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:43:59 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+10:47:41 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+10:50:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:23:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:27:12 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:36:13: error: use of undeclared identifier 'isVisited2'
+   36 |         if (isVisited2 == false){
+      |             ^
+Node.cc:37:9: error: use of undeclared identifier 'isVisited2'; did you mean 'visited2'?
+   37 |         isVisited2 = true;
+      |         ^~~~~~~~~~
+      |         visited2
+./Node.h:34:10: note: 'visited2' declared here
+   34 |     bool visited2;
+      |          ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:27:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:33:08 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:35:04 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:35:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+11:39:33 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+18:02:32 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:19:43 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:40:18: error: no viable conversion from 'cMessage *' to 'cMessage'
+   40 |         cMessage timerMsg = new cMessage("timerMsg", 1);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:172:5: note: candidate constructor not viable: no known conversion from 'cMessage *' to 'const cMessage &' for 1st argument; dereference the argument with *
+  172 |     cMessage(const cMessage& msg);
+      |     ^        ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cmessage.h:177:14: note: explicit constructor is not a candidate
+  177 |     explicit cMessage(const char *name=nullptr, short kind=0);
+      |              ^
+Node.cc:41:37: error: no viable conversion from 'cMessage' to 'cMessage *'
+   41 |         scheduleAt(simTime() + 0.1, timerMsg);
+      |                                     ^~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/csimplemodule.h:529:52: note: passing argument to parameter 'msg' here
+  529 |     virtual void scheduleAt(simtime_t t, cMessage *msg);
+      |                                                    ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+18:20:05 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+18:21:39 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:22:19 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:23:53 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:24:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:25:00 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:57:15 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+18:58:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:49:26: error: use of undeclared identifier '??'
+   49 |         if (uniform(0,1)<??){
+      |                          ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+18:58:50 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:01:41 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+19:03:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:03:15 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:04:16 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:09:30 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+In file included from ./Controller.h:5:
+./Node.h:44:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   44 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Node.cc
+In file included from Node.cc:1:
+./Node.h:44:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   44 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Creating executable: out/clang-release//Final
+19:12:44 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+In file included from Node.cc:1:
+./Node.h:44:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   44 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Creating executable: out/clang-release//Final
+19:15:22 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+In file included from Node.cc:1:
+./Node.h:44:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   44 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Creating executable: out/clang-release//Final
+19:19:33 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+In file included from Node.cc:1:
+./Node.h:44:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   44 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Creating executable: out/clang-release//Final
+19:22:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+In file included from ./Controller.h:5:
+./Node.h:45:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Node.cc
+In file included from Node.cc:1:
+./Node.h:45:18: warning: 'finish' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     virtual void finish();
+      |                  ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/ccomponent.h:281:18: note: overridden virtual function is here
+  281 |     virtual void finish();
+      |                  ^
+1 warning generated.
+Creating executable: out/clang-release//Final
+19:24:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+19:26:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:27:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:29:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:41:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:46:32 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:21:29: error: 'nodeID' is a protected member of 'Node'
+   21 |         if (nodeID == sink->nodeID){
+      |                             ^
+./Node.h:30:9: note: declared protected here
+   30 |     int nodeID;
+      |         ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:49:07 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:21:19: error: no member named 'getNodeID' in 'Controller'
+   21 |         if (this->getNodeID() == sink->nodeID){
+      |             ~~~~  ^
+Controller.cc:21:40: error: 'nodeID' is a protected member of 'Node'
+   21 |         if (this->getNodeID() == sink->nodeID){
+      |                                        ^
+./Node.h:30:9: note: declared protected here
+   30 |     int nodeID;
+      |         ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:49:53 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:21:19: error: no member named 'getNodeID' in 'Controller'
+   21 |         if (this->getNodeID() == sink->getNodeID()){
+      |             ~~~~  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:50:07 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:21:13: error: use of undeclared identifier 'getNodeID'
+   21 |         if (getNodeID() == sink->getNodeID()){
+      |             ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:50:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:21:19: error: no member named 'getNodeID' in 'Controller'
+   21 |         if (this->getNodeID() == sink->getNodeID()){
+      |             ~~~~  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:52:43 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:65:13: error: called object type 'int' is not a function or function pointer
+   64 |             data++
+      |             ~~~~~~
+   65 |             EV << data <<endl;
+      |             ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:277:19: note: expanded from macro 'EV'
+  277 | #define EV        EV_INFO
+      |                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:301:19: note: expanded from macro 'EV_INFO'
+  301 | #define EV_INFO   EV_LOG(omnetpp::LOGLEVEL_INFO, nullptr)
+      |                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:271:36: note: expanded from macro 'EV_LOG'
+  271 | #define EV_LOG(logLevel, category) OPP_LOGPROXY(getThisPtr(), logLevel, category).getStream()
+      |                                    ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/clog.h:210:5: note: expanded from macro 'OPP_LOGPROXY'
+  210 |     ((void)0, !(COMPILETIME_LOG_PREDICATE(object, logLevel, category) && \
+      |     ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:53:06 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:57:16 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:11:12: error: no viable overloaded '='
+   11 |    counter = 0;
+      |    ~~~~~~~ ^ ~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/stl_vector.h:751:7: note: candidate function not viable: no known conversion from 'int' to 'const vector<int *>' for 1st argument
+  751 |       operator=(const vector& __x);
+      |       ^         ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/stl_vector.h:766:7: note: candidate function not viable: no known conversion from 'int' to 'vector<int *>' for 1st argument
+  766 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^         ~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/stl_vector.h:788:7: note: candidate function not viable: no known conversion from 'int' to 'initializer_list<value_type>' (aka 'initializer_list<int *>') for 1st argument
+  788 |       operator=(initializer_list<value_type> __l)
+      |       ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Node.cc:64:17: error: called object type 'int' is not a function or function pointer
+   64 |             data(msg->getArrivalGate()->getIndex())++;
+      |             ~~~~^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:57:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:63:17: error: called object type 'int' is not a function or function pointer
+   63 |             data(msg->getArrivalGate()->getIndex())++;
+      |             ~~~~^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:04:58 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:11:4: error: use of undeclared identifier 'data'
+   11 |    data = 0;
+      |    ^
+Node.cc:64:13: error: use of undeclared identifier 'data'; did you mean 'std::data'?
+   64 |             data[msg->getArrivalGate()->getIndex()]++;
+      |             ^~~~
+      |             std::data
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/range_access.h:312:5: note: 'std::data' declared here
+  312 |     data(_Container& __cont) noexcept(noexcept(__cont.data()))
+      |     ^
+Node.cc:64:13: error: reference to overloaded function could not be resolved; did you mean to call it?
+   64 |             data[msg->getArrivalGate()->getIndex()]++;
+      |             ^~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/range_access.h:312:5: note: possible target for call
+  312 |     data(_Container& __cont) noexcept(noexcept(__cont.data()))
+      |     ^
+Node.cc:65:19: error: use of undeclared identifier 'data'; did you mean 'atan'?
+   65 |             EV << data <<endl;
+      |                   ^~~~
+      |                   atan
+/usr/include/bits/mathcalls.h:57:17: note: 'atan' declared here
+   57 | __MATHCALL_VEC (atan,, (_Mdouble_ __x));
+      |                 ^
+Node.cc:65:19: warning: address of function 'atan' will always evaluate to 'true' [-Wpointer-bool-conversion]
+   65 |             EV << data <<endl;
+      |                ~~ ^~~~
+Node.cc:65:19: note: prefix with the address-of operator to silence this warning
+   65 |             EV << data <<endl;
+      |                   ^
+      |                   &
+1 warning and 4 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:05:21 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:63:13: error: use of undeclared identifier 'data'; did you mean 'std::data'?
+   63 |             data[msg->getArrivalGate()->getIndex()]++;
+      |             ^~~~
+      |             std::data
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/range_access.h:312:5: note: 'std::data' declared here
+  312 |     data(_Container& __cont) noexcept(noexcept(__cont.data()))
+      |     ^
+Node.cc:63:13: error: reference to overloaded function could not be resolved; did you mean to call it?
+   63 |             data[msg->getArrivalGate()->getIndex()]++;
+      |             ^~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/range_access.h:312:5: note: possible target for call
+  312 |     data(_Container& __cont) noexcept(noexcept(__cont.data()))
+      |     ^
+Node.cc:64:19: error: use of undeclared identifier 'data'; did you mean 'atan'?
+   64 |             EV << data <<endl;
+      |                   ^~~~
+      |                   atan
+/usr/include/bits/mathcalls.h:57:17: note: 'atan' declared here
+   57 | __MATHCALL_VEC (atan,, (_Mdouble_ __x));
+      |                 ^
+Node.cc:64:19: warning: address of function 'atan' will always evaluate to 'true' [-Wpointer-bool-conversion]
+   64 |             EV << data <<endl;
+      |                ~~ ^~~~
+Node.cc:64:19: note: prefix with the address-of operator to silence this warning
+   64 |             EV << data <<endl;
+      |                   ^
+      |                   &
+1 warning and 3 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:06:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:64:16: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'std::vector<int>')
+   64 |             EV << data <<endl;
+      |             ~~ ^  ~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/cstddef:125:5: note: candidate function template not viable: no known conversion from 'std::ostream' (aka 'basic_ostream<char>') to 'byte' for 1st argument
+  125 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/system_error:339:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const error_code' for 2nd argument
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^                                                ~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:570:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  570 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^                                                 ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:576:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  576 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^                                               ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:587:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'signed char' for 2nd argument
+  587 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:592:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'unsigned char' for 2nd argument
+  592 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:668:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  668 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:681:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const signed char *' for 2nd argument
+  681 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:686:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const unsigned char *' for 2nd argument
+  686 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/ostream.tcc:307:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^                                                 ~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/simtime.h:462:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const SimTime' for 2nd argument
+  462 | inline std::ostream& operator<<(std::ostream& os, const SimTime& x)
+      |                      ^                            ~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/opp_string.h:189:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const opp_string' for 2nd argument
+  189 | inline std::ostream& operator<<(std::ostream& out, const opp_string& s)
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/mersennetwister.h:367:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const MTRand' for 2nd argument
+  367 | inline std::ostream& operator<<( std::ostream& os, const MTRand& mtrand )
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:560:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::vector<int>')
+  560 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/string_view:760:5: note: candidate template ignored: could not match 'basic_string_view' against 'vector'
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/basic_string.h:4077:5: note: candidate template ignored: could not match 'basic_string' against 'vector'
+ 4077 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:651:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::vector<int>'
+  651 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:367:1: note: candidate template ignored: could not match 'const T *' against 'std::vector<int>'
+  367 | operator<<(std::ostream& os, const T *p) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:807:5: note: candidate template ignored: requirement '__and_<std::is_class<std::basic_ostream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_ostream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_ostream<char, std::char_traits<char>> *, std::ios_base *>>::value' was not satisfied [with _Ostream = std::ostream &, _Tp = std::vector<int>]
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:376:1: note: candidate template ignored: requirement 'std::is_base_of<omnetpp::cObject, std::vector<int, std::allocator<int>>>::value' was not satisfied [with T = std::vector<int>]
+  376 | operator<<(std::ostream& os, const T& o) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:116:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ostream_type &(*)(__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char>> &(*)(basic_ostream<char, std::char_traits<char>> &)') for 1st argument
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:125:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ios_type &(*)(__ios_type &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:135:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'ios_base &(*)(ios_base &)' for 1st argument
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:174:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long' for 1st argument
+  174 |       operator<<(long __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:178:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long' for 1st argument
+  178 |       operator<<(unsigned long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:182:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'bool' for 1st argument
+  182 |       operator<<(bool __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:186:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'short' for 1st argument
+  186 |       operator<<(short __n);
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:189:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned short' for 1st argument
+  189 |       operator<<(unsigned short __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:197:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'int' for 1st argument
+  197 |       operator<<(int __n);
+      |       ^          ~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:200:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned int' for 1st argument
+  200 |       operator<<(unsigned int __n)
+      |       ^          ~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:209:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long long' for 1st argument
+  209 |       operator<<(long long __n)
+      |       ^          ~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:213:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long long' for 1st argument
+  213 |       operator<<(unsigned long long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:228:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'double' for 1st argument
+  228 |       operator<<(double __f)
+      |       ^          ~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:232:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'float' for 1st argument
+  232 |       operator<<(float __f)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:240:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long double' for 1st argument
+  240 |       operator<<(long double __f)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:298:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const void *' for 1st argument; take the address of the argument with &
+  298 |       operator<<(const void* __p)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:303:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+  303 |       operator<<(nullptr_t)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:336:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+  336 |       operator<<(__streambuf_type* __sb);
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:07:59 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:64:23: error: invalid operands to binary expression ('ostream' (aka 'basic_ostream<char>') and 'std::vector<int>')
+   64 |             std::cout << data <<endl;
+      |             ~~~~~~~~~ ^  ~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/cstddef:125:5: note: candidate function template not viable: no known conversion from 'ostream' (aka 'basic_ostream<char>') to 'byte' for 1st argument
+  125 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/system_error:339:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const error_code' for 2nd argument
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^                                                ~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:570:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  570 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^                                                 ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:576:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  576 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^                                               ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:587:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'signed char' for 2nd argument
+  587 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:592:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'unsigned char' for 2nd argument
+  592 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:668:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  668 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:681:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const signed char *' for 2nd argument
+  681 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:686:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const unsigned char *' for 2nd argument
+  686 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/ostream.tcc:307:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^                                                 ~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/simtime.h:462:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const SimTime' for 2nd argument
+  462 | inline std::ostream& operator<<(std::ostream& os, const SimTime& x)
+      |                      ^                            ~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/opp_string.h:189:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const opp_string' for 2nd argument
+  189 | inline std::ostream& operator<<(std::ostream& out, const opp_string& s)
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/mersennetwister.h:367:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const MTRand' for 2nd argument
+  367 | inline std::ostream& operator<<( std::ostream& os, const MTRand& mtrand )
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:560:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::vector<int>')
+  560 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/string_view:760:5: note: candidate template ignored: could not match 'basic_string_view' against 'vector'
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/basic_string.h:4077:5: note: candidate template ignored: could not match 'basic_string' against 'vector'
+ 4077 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:651:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::vector<int>'
+  651 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:367:1: note: candidate template ignored: could not match 'const T *' against 'std::vector<int>'
+  367 | operator<<(std::ostream& os, const T *p) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:807:5: note: candidate template ignored: requirement '__and_<std::is_class<std::basic_ostream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_ostream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_ostream<char, std::char_traits<char>> *, std::ios_base *>>::value' was not satisfied [with _Ostream = ostream &, _Tp = std::vector<int>]
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:376:1: note: candidate template ignored: requirement 'std::is_base_of<omnetpp::cObject, std::vector<int, std::allocator<int>>>::value' was not satisfied [with T = std::vector<int>]
+  376 | operator<<(std::ostream& os, const T& o) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:116:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ostream_type &(*)(__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char>> &(*)(basic_ostream<char, std::char_traits<char>> &)') for 1st argument
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:125:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ios_type &(*)(__ios_type &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:135:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'ios_base &(*)(ios_base &)' for 1st argument
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:174:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long' for 1st argument
+  174 |       operator<<(long __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:178:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long' for 1st argument
+  178 |       operator<<(unsigned long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:182:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'bool' for 1st argument
+  182 |       operator<<(bool __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:186:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'short' for 1st argument
+  186 |       operator<<(short __n);
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:189:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned short' for 1st argument
+  189 |       operator<<(unsigned short __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:197:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'int' for 1st argument
+  197 |       operator<<(int __n);
+      |       ^          ~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:200:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned int' for 1st argument
+  200 |       operator<<(unsigned int __n)
+      |       ^          ~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:209:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long long' for 1st argument
+  209 |       operator<<(long long __n)
+      |       ^          ~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:213:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long long' for 1st argument
+  213 |       operator<<(unsigned long long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:228:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'double' for 1st argument
+  228 |       operator<<(double __f)
+      |       ^          ~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:232:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'float' for 1st argument
+  232 |       operator<<(float __f)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:240:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long double' for 1st argument
+  240 |       operator<<(long double __f)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:298:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const void *' for 1st argument; take the address of the argument with &
+  298 |       operator<<(const void* __p)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:303:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+  303 |       operator<<(nullptr_t)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:336:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+  336 |       operator<<(__streambuf_type* __sb);
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:09:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Node.cc:65:20: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'std::vector<int>')
+   65 |                 EV << data <<endl;
+      |                 ~~ ^  ~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/cstddef:125:5: note: candidate function template not viable: no known conversion from 'std::ostream' (aka 'basic_ostream<char>') to 'byte' for 1st argument
+  125 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/system_error:339:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const error_code' for 2nd argument
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^                                                ~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:570:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  570 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^                                                 ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:576:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'char' for 2nd argument
+  576 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^                                               ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:587:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'signed char' for 2nd argument
+  587 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:592:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'unsigned char' for 2nd argument
+  592 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^                                               ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:668:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  668 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:681:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const signed char *' for 2nd argument
+  681 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:686:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const unsigned char *' for 2nd argument
+  686 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^                                               ~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/ostream.tcc:307:5: note: candidate function template not viable: no known conversion from 'std::vector<int>' to 'const char *' for 2nd argument
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^                                                 ~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/simtime.h:462:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const SimTime' for 2nd argument
+  462 | inline std::ostream& operator<<(std::ostream& os, const SimTime& x)
+      |                      ^                            ~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/opp_string.h:189:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const opp_string' for 2nd argument
+  189 | inline std::ostream& operator<<(std::ostream& out, const opp_string& s)
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/mersennetwister.h:367:22: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const MTRand' for 2nd argument
+  367 | inline std::ostream& operator<<( std::ostream& os, const MTRand& mtrand )
+      |                      ^                             ~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:560:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::vector<int>')
+  560 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/string_view:760:5: note: candidate template ignored: could not match 'basic_string_view' against 'vector'
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/bits/basic_string.h:4077:5: note: candidate template ignored: could not match 'basic_string' against 'vector'
+ 4077 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:651:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::vector<int>'
+  651 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:367:1: note: candidate template ignored: could not match 'const T *' against 'std::vector<int>'
+  367 | operator<<(std::ostream& os, const T *p) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:807:5: note: candidate template ignored: requirement '__and_<std::is_class<std::basic_ostream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_ostream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_ostream<char, std::char_traits<char>> *, std::ios_base *>>::value' was not satisfied [with _Ostream = std::ostream &, _Tp = std::vector<int>]
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/cobject.h:376:1: note: candidate template ignored: requirement 'std::is_base_of<omnetpp::cObject, std::vector<int, std::allocator<int>>>::value' was not satisfied [with T = std::vector<int>]
+  376 | operator<<(std::ostream& os, const T& o) {
+      | ^
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:116:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ostream_type &(*)(__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char>> &(*)(basic_ostream<char, std::char_traits<char>> &)') for 1st argument
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:125:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__ios_type &(*)(__ios_type &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:135:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'ios_base &(*)(ios_base &)' for 1st argument
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:174:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long' for 1st argument
+  174 |       operator<<(long __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:178:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long' for 1st argument
+  178 |       operator<<(unsigned long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:182:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'bool' for 1st argument
+  182 |       operator<<(bool __n)
+      |       ^          ~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:186:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'short' for 1st argument
+  186 |       operator<<(short __n);
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:189:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned short' for 1st argument
+  189 |       operator<<(unsigned short __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:197:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'int' for 1st argument
+  197 |       operator<<(int __n);
+      |       ^          ~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:200:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned int' for 1st argument
+  200 |       operator<<(unsigned int __n)
+      |       ^          ~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:209:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long long' for 1st argument
+  209 |       operator<<(long long __n)
+      |       ^          ~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:213:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'unsigned long long' for 1st argument
+  213 |       operator<<(unsigned long long __n)
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:228:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'double' for 1st argument
+  228 |       operator<<(double __f)
+      |       ^          ~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:232:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'float' for 1st argument
+  232 |       operator<<(float __f)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:240:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'long double' for 1st argument
+  240 |       operator<<(long double __f)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:298:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'const void *' for 1st argument; take the address of the argument with &
+  298 |       operator<<(const void* __p)
+      |       ^          ~~~~~~~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:303:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+  303 |       operator<<(nullptr_t)
+      |       ^          ~~~~~~~~~
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/ostream:336:7: note: candidate function not viable: no known conversion from 'std::vector<int>' to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+  336 |       operator<<(__streambuf_type* __sb);
+      |       ^          ~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:09:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+20:09:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:13:25 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:69:1: error: extraneous closing brace ('}')
+   69 | }
+      | ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:13:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+20:13:59 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:14:11 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:14:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+20:15:13 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:15:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+20:18:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+20:20:16 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:20:53 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:21:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:22:26 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:26:54 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+20:27:40 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:28:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:28:39 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:31:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:11:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:12:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:21:47 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:30:24 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:32:06 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:38:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:39:26 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+19:41:28 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+19:44:33 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:45:01 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:46:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:48:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:48:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+19:57:06 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'; did you mean 'Controller::__factoryfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__factoryfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:28: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                            ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:15:1: note: expanded from here
+   15 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'; did you mean 'Controller::__castfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__castfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:153:16: note: expanded from macro '__REGISTER_CLASS_X'
+  153 |   static void *MAKE_UNIQUE_WITHIN_FILE(__castfunc_)(omnetpp::cObject *obj) {return (void*)dynamic_cast<CLASSNAME*>(obj);} \
+      |                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:17:1: note: expanded from here
+   17 | __castfunc_3
+      | ^
+Controller.cc:10:8: error: subscripted value is not an array, pointer, or vector
+   10 |      rc[i]
+      |      ~~^~
+4 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:58:24 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'; did you mean 'Controller::__factoryfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__factoryfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:28: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                            ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:15:1: note: expanded from here
+   15 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'; did you mean 'Controller::__castfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__castfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:153:16: note: expanded from macro '__REGISTER_CLASS_X'
+  153 |   static void *MAKE_UNIQUE_WITHIN_FILE(__castfunc_)(omnetpp::cObject *obj) {return (void*)dynamic_cast<CLASSNAME*>(obj);} \
+      |                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:17:1: note: expanded from here
+   17 | __castfunc_3
+      | ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:59:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'; did you mean 'Controller::__factoryfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__factoryfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:28: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                            ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:15:1: note: expanded from here
+   15 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'; did you mean 'Controller::__castfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__castfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:153:16: note: expanded from macro '__REGISTER_CLASS_X'
+  153 |   static void *MAKE_UNIQUE_WITHIN_FILE(__castfunc_)(omnetpp::cObject *obj) {return (void*)dynamic_cast<CLASSNAME*>(obj);} \
+      |                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:17:1: note: expanded from here
+   17 | __castfunc_3
+      | ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:59:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'; did you mean 'Controller::__factoryfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__factoryfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:28: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                            ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:15:1: note: expanded from here
+   15 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'; did you mean 'Controller::__castfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__castfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:153:16: note: expanded from macro '__REGISTER_CLASS_X'
+  153 |   static void *MAKE_UNIQUE_WITHIN_FILE(__castfunc_)(omnetpp::cObject *obj) {return (void*)dynamic_cast<CLASSNAME*>(obj);} \
+      |                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:17:1: note: expanded from here
+   17 | __castfunc_3
+      | ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:00:16 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'; did you mean 'Controller::__factoryfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__factoryfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:152:28: note: expanded from macro '__REGISTER_CLASS_X'
+  152 |   static omnetpp::cObject *MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_)() {BASECLASS *ret = new CLASSNAME; return ret; } \
+      |                            ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:15:1: note: expanded from here
+   15 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'; did you mean 'Controller::__castfunc_3'?
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+Controller.cc:3:1: note: 'Controller::__castfunc_3' declared here
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:153:16: note: expanded from macro '__REGISTER_CLASS_X'
+  153 |   static void *MAKE_UNIQUE_WITHIN_FILE(__castfunc_)(omnetpp::cObject *obj) {return (void*)dynamic_cast<CLASSNAME*>(obj);} \
+      |                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:17:1: note: expanded from here
+   17 | __castfunc_3
+      | ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:01:00 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+20:02:29 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+In file included from Controller.cc:1:
+./Controller.h:10:7: error: missing '}' at end of definition of 'Controller'
+   10 | class Controller : public cSimpleModule
+      |       ^
+Controller.cc:3:1: note: still within definition of 'Controller' here
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:3: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:53:3: note: expanded from macro 'EXECUTE_ON_STARTUP'
+   53 |   namespace { \
+      |   ^
+Controller.cc:3:1: error: use of undeclared identifier '__factoryfunc_3'
+    3 | Define_Module(Controller);
+      | ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:138: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                          ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:19:1: note: expanded from here
+   19 | __factoryfunc_3
+      | ^
+Controller.cc:3:1: error: use of undeclared identifier '__castfunc_3'
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:136:35: note: expanded from macro 'Define_Module'
+  136 | #define Define_Module(CLASSNAME)  __REGISTER_CLASS(CLASSNAME, omnetpp::cModule, "module")
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:148:3: note: expanded from macro '__REGISTER_CLASS'
+  148 |   __REGISTER_CLASS_X(CLASSNAME, BASECLASS, DESC, /*nothing*/ )
+      |   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/regmacros.h:154:179: note: expanded from macro '__REGISTER_CLASS_X'
+  154 |   EXECUTE_ON_STARTUP(omnetpp::internal::classes.getInstance()->add(new omnetpp::cObjectFactory(omnetpp::opp_typename(typeid(CLASSNAME)), MAKE_UNIQUE_WITHIN_FILE(__factoryfunc_), MAKE_UNIQUE_WITHIN_FILE(__castfunc_), DESC)); EXTRACODE; )
+      |                                                                                                                                                                                   ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:29:35: note: expanded from macro '__OPPCONCAT2'
+   29 | #define __OPPCONCAT2(prefix,line) __OPPCONCAT1(prefix,line)
+      |                                   ^
+/home/gkario/Documents/inf/omnetpp-6.0.2/include/omnetpp/onstartup.h:28:27: note: expanded from macro '__OPPCONCAT1'
+   28 | #define __OPPCONCAT1(x,y) x##y
+      |                           ^
+<scratch space>:21:1: note: expanded from here
+   21 | __castfunc_3
+      | ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:02:51 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+20:04:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+20:08:05 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+20:08:26 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:08:40 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:08:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:09:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:09:31 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:09:44 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:09:56 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:10:29 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+20:10:47 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:11:04 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:12:01 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+20:12:42 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:13:46 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:14:18 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:14:48 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:19:07 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Creating executable: out/clang-debug//Final_dbg
+20:25:23 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Creating executable: out/clang-debug//Final_dbg
+20:26:10 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:26:22 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+20:26:33 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+12:40:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+12:42:57 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+12:44:39 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+12:51:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+ld.lld: error: undefined symbol: Node::getNodeID()
+>>> referenced by Controller.cc
+>>>               out/clang-release//Controller.o:(Controller::finish())
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:97: out/clang-release//Final] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:51:56 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+12:55:52 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+12:57:11 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:12:20: error: called object type 'Node *' is not a function or function pointer
+   12 |         yPos = node(i)->par("yPos");
+      |                ~~~~^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:57:24 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:12:20: error: member reference type 'Node *' is a pointer; did you mean to use '->'?
+   12 |         yPos = node.at(i)->par("yPos");
+      |                ~~~~^
+      |                    ->
+Controller.cc:12:21: error: no member named 'at' in 'Node'
+   12 |         yPos = node.at(i)->par("yPos");
+      |                ~~~~ ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:57:34 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:12:22: error: no member named 'at' in 'Node'
+   12 |         yPos = node->at(i)->par("yPos");
+      |                ~~~~  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:57:47 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:06:01 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:06:50 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:08:18 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:99:18: error: out-of-line definition of 'finish' does not match any declaration in 'Controller'
+   99 | void Controller::finish(){
+      |                  ^~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:08:36 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Node.cc:97:11: error: use of undeclared identifier 'xPos'
+   97 |     EV << xPos << "   " << yPos << endl;
+      |           ^
+Node.cc:97:28: error: use of undeclared identifier 'yPos'
+   97 |     EV << xPos << "   " << yPos << endl;
+      |                            ^
+2 errors generated.
+make: *** [Makefile:108: out/clang-release//Node.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:09:45 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+13:12:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+13:20:51 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:103:15: error: use of undeclared identifier 'node'
+  103 |         EV << node->at(i).xPos <<endl;
+      |               ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:21:22 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:103:20: error: member reference type 'std::vector<Node *>' is not a pointer; did you mean to use '.'?
+  103 |         EV << nodes->at(i).xPos <<endl;
+      |               ~~~~~^~
+      |                    .
+Controller.cc:103:27: error: member reference type 'value_type' (aka 'Node *') is a pointer; did you mean to use '->'?
+  103 |         EV << nodes->at(i).xPos <<endl;
+      |               ~~~~~~~~~~~~^
+      |                           ->
+Controller.cc:103:28: error: no member named 'xPos' in 'Node'
+  103 |         EV << nodes->at(i).xPos <<endl;
+      |               ~~~~~~~~~~~~ ^
+3 errors generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:21:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:103:28: error: no member named 'xPos' in 'Node'
+  103 |         EV << nodes.at(i)->xPos <<endl;
+      |               ~~~~~~~~~~~  ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:22:35 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:103:28: error: 'xPos' is a protected member of 'Node'
+  103 |         EV << nodes.at(i)->xPos <<endl;
+      |                            ^
+./Node.h:31:12: note: declared protected here
+   31 |     double xPos;
+      |            ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:23:10 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+13:25:40 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:26:38 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:103:15: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+  103 |         EV << abs(distance) << endl;
+      |               ^
+Controller.cc:103:15: note: use function 'std::abs' instead
+  103 |         EV << abs(distance) << endl;
+      |               ^~~
+      |               std::abs
+1 warning generated.
+Creating executable: out/clang-release//Final
+13:26:56 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:27:28 **** Incremental Build of configuration debug for project Final ****
+make MODE=debug all 
+Controller.cc
+Controller.cc:103:15: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+  103 |         EV << abs(distance) << endl;
+      |               ^
+Controller.cc:103:15: note: use function 'std::abs' instead
+  103 |         EV << abs(distance) << endl;
+      |               ^~~
+      |               std::abs
+1 warning generated.
+Node.cc
+Creating executable: out/clang-debug//Final_dbg
+13:29:46 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:33:42 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:102:62: error: invalid operands to binary expression ('double' and 'double')
+  102 |         distance = std::sqrt((sink->xPos - nodes.at(i)->xPos)^2 + (sink->yPos - nodes.at(i)->yPos)^2);
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:35:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:37:53 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:38:17 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:40:04 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:43:20 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Node.cc
+Creating executable: out/clang-release//Final
+13:45:49 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+13:50:21 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Controller.cc:107:48: error: use of undeclared identifier 'i'
+  107 |     fprintf(fp, "%f\t%d\n", distance, nodes.at(i)->data);
+      |                                                ^
+1 error generated.
+make: *** [Makefile:108: out/clang-release//Controller.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:50:48 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+13:54:54 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Node.cc
+Creating executable: out/clang-release//Final
+13:56:03 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+14:03:44 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+Controller.cc
+Creating executable: out/clang-release//Final
+14:17:43 **** Incremental Build of configuration release for project Final ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
